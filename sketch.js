@@ -153,11 +153,11 @@ function spawnClouds(){
   
 }
 function makingObstacles(){
-  if(frameCount%100===0){
+  if(frameCount%60===0){
     //console.log(frameCount%100);
   obstacleS=createSprite(500,160,10,10);
   
-  obstacleS.velocityX=-10;
+  obstacleS.velocityX=20;
   obstacleS.scale=0.8;
     rand=Math.round(random(1,6));
     console.log(rand);
